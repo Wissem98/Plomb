@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:padding="8dp"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+        android:background="@color/colorAccentt">
+
+
+
+
+    <TextView
+            android:id="@+id/tv_plombier"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            tools:layout_editor_absoluteY="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+
+    />
+
+    <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            app:layout_constraintStart_toEndOf="@id/tv_plombier"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            app:layout_constraintStart_toEndOf="@id/tv_type"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rv_delete"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_edit"
+            app:fabSize="mini"
+            app:layout_constraintEnd_toStartOf="@id/rv_delete"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toEndOf="@id/tv_date"
+            tools:ignore="MissingConstraints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Plombier Service</string>
+    <string name="title_activity_dashboard">Nos Interventions</string>
+
+
+    <string name="selected_item">Selected item:</string>
+        <string-array name="plumbers">
+            <item>Nedjma</item>
+            <item>Wissem</item>
+            <item>Riyane</item>
+            <item>Mounia</item>
+            <item>Amine</item>
+        </string-array>
+
+    <string-array name="type">
+
+        <item>installation</item>
+        <item>dépannage</item>
+        <item>maintenance</item>
+    </string-array>
+
+</resources>
